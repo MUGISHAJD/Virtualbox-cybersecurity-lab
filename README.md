@@ -4,6 +4,8 @@
 
 This project focuses on building a virtual cybersecurity testing lab using Oracle VirtualBox. The lab consists of multiple virtual machines (Kali Linux, Windows 10 and Android 9x) configured to support practical learning in cybersecurity, networking, and ethical hacking.
 
+<img width="1919" height="1075" alt="3 Virtual machines" src="https://github.com/user-attachments/assets/c9a4719a-c483-4249-80ba-0d6b7fcbf7c7" />
+
 Kali Linux serves as the attacking and security-testing machine, while Windows 10 and Android 9x provide additional virtual environments for network connectivity testing and future security experiments.
 
 ## 2. Project Objectives
@@ -31,6 +33,12 @@ Ping: A command for testing network connectivity between virtual machines.
 
 The lab uses a NAT Network with the 10.0.0.0/24 subnet to allow virtual machine to communicate between them and access internet. 
 
+<img width="1821" height="1018" alt="Creating NAT network" src="https://github.com/user-attachments/assets/84af0fce-b16d-4ddc-a20f-7830c6341bb2" />
+
+You have to set the Adapter 1 to NAT Network for the Virtual machines to access internet and communicate.
+
+<img width="1563" height="962" alt="Connecting to NAT network" src="https://github.com/user-attachments/assets/f444db12-281d-495e-861f-968a0cdac90f" />
+
 ## i. Kali Linux Configuration (Attacking machine and cybersecurity testing environment)
 
 The required configuration includes:
@@ -41,6 +49,8 @@ The required configuration includes:
 - Bidirectional clipboard sharing
 - Drag-and-drop functionality
 - Shared host folder access
+
+<img width="1920" height="963" alt="Ip configuration for Linux" src="https://github.com/user-attachments/assets/47d758ef-98eb-4457-90a0-db56c139dd41" />
 
 ## ii. Window 10 Configuration (virtual machine for network connectivity testing and future security exercises)
 
@@ -53,6 +63,8 @@ The required configuration includes:
 - Drag-and-drop functionality
 - Shared host folder access
 
+<img width="1919" height="924" alt="Windows 10 IP addres" src="https://github.com/user-attachments/assets/10021da9-029f-49b8-a40e-1be29e0d9d09" />
+
 ## iii. Android 9x Configuration (virtual machine for network connectivity testing and future security exercises)
 
 The required configuration includes:
@@ -64,10 +76,13 @@ The required configuration includes:
 - Drag-and-drop functionality
 - Shared host folder access
 
+<img width="1919" height="1007" alt="Android 9x IP address" src="https://github.com/user-attachments/assets/c455d3ad-630d-423c-9420-f6fd6213b644" />
 
 ## 5. Shared Folder Configuration
 
 A folder named `downloads` on the host computer is shared with the Kali Linux virtual machine. The shared folder allows files to be exchanged between the host and guest operating systems.
+
+<img width="1919" height="1055" alt="Shared Downloads folder" src="https://github.com/user-attachments/assets/40862031-40de-43d1-bf44-597778b39de2" />
 
 Configuration requirements:
 
@@ -77,7 +92,6 @@ Configuration requirements:
 4. Enable automatic mounting if appropriate.
 5. Enable permanent sharing.
 6. Verify that Kali Linux can access the shared folder.
-
 
 ## 6. Connectivity Testing
 
@@ -95,6 +109,8 @@ ping -c 4 10.0.0.9
 
 ping -c 4 8.8.8.8
 
+<img width="1920" height="963" alt="successful ping test" src="https://github.com/user-attachments/assets/613a7f20-a347-4a9e-8090-026517a15503" />
+
 ### To test DNS resolution, run:
 
 ping -c 4 google.com
@@ -110,10 +126,8 @@ Suggested evidence:
 3. Kali Linux IP address configuration.
 4. Successful Kali Linux internet connectivity test.
 5. Shared folder and clipboard configuration.
-6. Windows 10 virtual machine running.
-7. Android 9x virtual machine running.
-8. Successful ping test results.
-9. Virtual machine snapshots.
+6. Successful ping test results.
+7. Virtual machine snapshots.
 
 ## 8. Learning Outcomes
 
